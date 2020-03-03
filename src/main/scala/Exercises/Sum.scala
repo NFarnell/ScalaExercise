@@ -1,9 +1,13 @@
 package Exercises
 
 object Sum extends App {
-  var int1 = 5
-  var int2 = 10
-  println(int1 + int2)
+  def Sums(num1: Int, num2: Int): Unit ={
+    println(num1 + num2)
+
+
+
+  }
+  Sums(10 ,5)
 
 
 }

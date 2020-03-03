@@ -9,13 +9,13 @@ var Output = ""
 
 
       if (i % 3 == 0) {
-        Output += word + ","
+        Output += word
       }
       if (i % 5 == 0) {
         Output += word2 + ","
       }
       if (i % 3 != 0 && i % 5 != 0) {
-        Output += i+","
+        Output += i+ ","
 
       }
 
