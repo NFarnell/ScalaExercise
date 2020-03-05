@@ -9,7 +9,7 @@ object BottlesOfBeer extends App {
 
     i -= 1
     }
-    println("You're out of beer, sainsburys time")
+    println("You're out of beer, Sainsburys time")
 
   }
   BottlesOfBeer(100)

@@ -1,8 +1,8 @@
 package Exercises
 
-object Sum extends App {
+object Sum2Condit extends App {
   def Sums(num1: Int, num2: Int): Unit ={
-    println(num1 + num2)
+
 
 
 
