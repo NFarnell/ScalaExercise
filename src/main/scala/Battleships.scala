@@ -26,30 +26,30 @@ object Battleships extends App {
   var Frigate2ndHit = Grid(x)(y + 1)
 
 
-  println("Place your second Frigate")
-  var x1 = scala.io.StdIn.readInt()
-  var y1 = scala.io.StdIn.readInt()
-  Grid(x)(y) = 1
-  var Frigate2 = Grid(x1)(y1)
-  var Frigate22ndHit = Grid(x1)(y1 + 1)
-
-  println("Place your Third Frigate")
-  var x2 = scala.io.StdIn.readInt()
-  var y2 = scala.io.StdIn.readInt()
-  var Frigate3 = Grid(x1)(y1)
-  var Frigate32ndHit = Grid(x1)(y1 + 1)
-
-  println("Place your fourth Frigate")
-  var x3 = scala.io.StdIn.readInt()
-  var y3 = scala.io.StdIn.readInt()
-  var Frigate4 = Grid(x1)(y1)
-  var Frigate42ndHit = Grid(x1)(y1 + 1)
-
-  println("Place your fifth Frigate")
-  var x4 = scala.io.StdIn.readInt()
-  var y4 = scala.io.StdIn.readInt()
-  var Frigate5 = Grid(x1)(y1)
-  var Frigate52ndHit = Grid(x1)(y1 + 1)
+//  println("Place your second Frigate")
+//  var x1 = scala.io.StdIn.readInt()
+//  var y1 = scala.io.StdIn.readInt()
+//  Grid(x)(y) = 1
+//  var Frigate2 = Grid(x1)(y1)
+//  var Frigate22ndHit = Grid(x1)(y1 + 1)
+//
+//  println("Place your Third Frigate")
+//  var x2 = scala.io.StdIn.readInt()
+//  var y2 = scala.io.StdIn.readInt()
+//  var Frigate3 = Grid(x1)(y1)
+//  var Frigate32ndHit = Grid(x1)(y1 + 1)
+//
+//  println("Place your fourth Frigate")
+//  var x3 = scala.io.StdIn.readInt()
+//  var y3 = scala.io.StdIn.readInt()
+//  var Frigate4 = Grid(x1)(y1)
+//  var Frigate42ndHit = Grid(x1)(y1 + 1)
+//
+//  println("Place your fifth Frigate")
+//  var x4 = scala.io.StdIn.readInt()
+//  var y4 = scala.io.StdIn.readInt()
+//  var Frigate5 = Grid(x1)(y1)
+//  var Frigate52ndHit = Grid(x1)(y1 + 1)
 
 
   while (playing) {
