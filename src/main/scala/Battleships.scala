@@ -14,16 +14,29 @@ object Battleships extends App {
   var TurnsTaken = 0
 
 
-  val Grid: Array[Array[Int]] = Array.ofDim[Int](12, 12)
 
+  val Grid: Array[Array[String]] = Array.ofDim[String](10, 10)
+  val Grid2: Array[Array[String]] = Array.ofDim[String](10, 10)
+
+
+  Grid(0)(0) = "   "
+  for (i<-1 to 9) {
+    Grid(0)(i) = i.toString + "  "
+    Grid(i)(0) = i.toString + "  "
+    for (j <- 1 to 9) {
+      Grid(j)(i) = "-  "
+    }
+  }
+  Grid foreach {row => row foreach print; println(" ")}
+  println("")
 
 
   println("Place your first Frigate")
   var x = scala.io.StdIn.readInt()
   var y = scala.io.StdIn.readInt()
-  Grid(x)(y) = 1
-  var Frigate = Grid(x)(y)
-  var Frigate2ndHit = Grid(x)(y + 1)
+
+  Grid2(x)(y) = "1"
+  Grid2(x)(y + 1) = "1"
 
 
 //  println("Place your second Frigate")
@@ -51,19 +64,21 @@ object Battleships extends App {
 //  var Frigate5 = Grid(x1)(y1)
 //  var Frigate52ndHit = Grid(x1)(y1 + 1)
 
-
+print(Grid2(1)(1))
   while (playing) {
+    Grid foreach {row => row foreach print; println(" ")}
+    println("")
 
     println("Enter x coordinate")
     var i = scala.io.StdIn.readInt()
     println("Enter y coordinate")
     var j = scala.io.StdIn.readInt()
-    println(Grid(i)(j))
 
-    if (Grid(i)(j) == Frigate) {
+    if (Grid2(i)(j) == "1") {
       println("hit")
       HitCount += 1
       TurnsTaken += 1
+      Grid(i)(j) = "X  "
       println(HitCount)
       println(ShipsSunk)
 
@@ -78,8 +93,9 @@ object Battleships extends App {
         }
       }
     }
-    if (Grid(i)(j) != Frigate) {
+    if (Grid2(i)(j) != "1") {
       println("miss")
+      Grid(i)(j) = "/  "
       TurnsTaken += 1
     }
   }

@@ -5,7 +5,8 @@ object PatternMatching extends App {
     val array = Array(num, num2)
     println(array.last)
     println(array.head)
-  }
 
-PatternsMatchin(5,10)
+
+  }
+  println(PatternsMatchin(5,10))
 }

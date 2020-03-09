@@ -1,28 +1,27 @@
 package ExercisesDay2
 
 object FizzBuzz extends App {
-  def FizzyBuzz(word: String, word2: String, num: Int): Unit = {
+  def FizzyBuzz(word: String, word2: String, num: Int): String = {
 var i = 0
 var Output = ""
     var Output2 = ""
-    for(i <- 1 to  num) {
 
 
-      if (i % 3 == 0) {
+      if (num % 3 == 0) {
         Output += word
       }
-      if (i % 5 == 0) {
-        Output += word2 + ","
+      if (num % 5 == 0) {
+        Output += word2
       }
-      if (i % 3 != 0 && i % 5 != 0) {
-        Output += i+ ","
+      if (num % 3 != 0 && i % 5 != 0) {
+        Output += num
 
       }
 
-    }
+println(Output)
+    Output
 
 
-    println(Output)
 
 
   }
